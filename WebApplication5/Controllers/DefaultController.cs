@@ -9,9 +9,14 @@ namespace WebApplication5.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-        public ActionResult Index()
+        public void Index()
         {
-            return View();
+            Response.Write("<h1>Hello github</h1>");
+        }
+
+        public void hello()
+        {
+            Response.Write("<h2>Hello</h2>");
         }
     }
 }
